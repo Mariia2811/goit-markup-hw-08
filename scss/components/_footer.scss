@@ -1,0 +1,34 @@
+.footer {
+    background-color: var(--secondary-background);
+    padding: 60px 0;
+
+    &__container {
+        
+        align-items: baseline;
+    }
+
+    &__adress {
+        
+    
+    }
+
+    &-social {
+       
+    }
+
+    & .link {
+        line-height: 1.71;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    &-description {
+        color: var(--white-accent);
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+}

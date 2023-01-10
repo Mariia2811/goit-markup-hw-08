@@ -1,0 +1,49 @@
+.header--line {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav,
+.header__contact {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu {
+    display: flex;
+    gap: 50px;
+}
+
+.header__contact {
+    gap: 40px;
+}
+
+.header__link {
+    padding: 32px 0;
+    display: block;
+    position: relative;
+    color: var(--color-primary);
+
+    &--сurrent::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: var(--color-accent);
+        border-radius: 2px;
+    }
+}
+
+.header__link,
+.link__contact {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
