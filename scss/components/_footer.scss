@@ -1,19 +1,20 @@
 .footer {
     background-color: var(--secondary-background);
     padding: 60px 0;
+    display: flex;
 
     &__container {
-        
+        display: flex;
         align-items: baseline;
     }
 
     &__adress {
-        
-    
+        margin-right: 70px;
+        width: 231px;
     }
 
     &-social {
-       
+        margin-right: 93px;
     }
 
     & .link {

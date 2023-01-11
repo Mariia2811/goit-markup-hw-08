@@ -55,3 +55,9 @@
     position: relative;
     display: inline-block;
 }
+
+.header__burger{
+    @media (min-width: 768px) {
+        display: none;
+    }
+}

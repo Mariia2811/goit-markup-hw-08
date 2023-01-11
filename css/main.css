@@ -246,6 +246,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
+  margin-right: 305px;
 }
 
 .header__contact {
@@ -275,6 +276,17 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.header__list {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .portfolio__item {
@@ -498,6 +510,12 @@ p {
   display: inline-block;
 }
 
+@media (min-width: 768px) {
+  .header__burger {
+    display: none;
+  }
+}
+
 .checkbox {
   position: relative;
   margin-bottom: 30px;
@@ -528,29 +546,48 @@ p {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/banner.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
   background-repeat: no-repeat;
+  max-width: 1600px;
+  height: 600px;
   margin: 0 auto;
   background-position: center;
   background-size: cover;
   background-color: var(--secondary-background);
+  padding: 200px 0;
   text-align: center;
 }
 .hero__title {
   color: var(--white-accent);
+  font-size: 44px;
+  line-height: 1.36;
   text-align: center;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin: 0 auto 30px;
+  width: 696px;
 }
 
 .footer {
   background-color: var(--secondary-background);
   padding: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+.footer__adress {
+  margin-right: 70px;
+  width: 231px;
+}
+.footer-social {
+  margin-right: 93px;
 }
 .footer .link {
   line-height: 1.71;
@@ -593,6 +630,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 270px;
   height: 120px;
   background-color: var(--button-background);
   -webkit-box-align: center;
@@ -633,6 +671,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 170px;
   height: 92px;
   border: 1px solid var(--color-icon);
   fill: var(--color-icon);
@@ -720,12 +759,18 @@ p {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.38;
   color: var(--color-accent);
   text-decoration: none;
   display: block;
+}
+@media (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.17;
+  }
 }
 .logo__header {
   color: var(--black-logo);

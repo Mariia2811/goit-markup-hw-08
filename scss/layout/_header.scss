@@ -16,6 +16,7 @@
 .header__menu {
     display: flex;
     gap: 50px;
+    margin-right: 305px;
 }
 
 .header__contact {
@@ -46,4 +47,11 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.header__list {
+    display: none;
+    @media (min-width: 768px) {
+        display: flex;
+    }
 }
