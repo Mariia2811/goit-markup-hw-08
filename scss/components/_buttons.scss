@@ -57,7 +57,13 @@
 }
 
 .header__burger{
-    @media (min-width: 768px) {
+    border: none;
+    background-color: inherit;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    text-align: end;
+    @media (min-width: 767px) {
         display: none;
     }
 }
