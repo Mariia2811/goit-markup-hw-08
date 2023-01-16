@@ -1,10 +1,20 @@
 .main-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+
+    &__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    &__clients{
+        flex-basis: calc((100% - 30px)/2);
+    }
 }
 
 .social-list {
     display: flex;
     gap: 10px;
     justify-content: center;
+    margin-bottom: 60px;
 }

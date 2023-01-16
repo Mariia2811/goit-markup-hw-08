@@ -9,9 +9,10 @@
 
 .header__nav,
 .header__contact {
-    display: inline-block;
-    // display: flex;
-    // align-items: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header__menu {
@@ -25,7 +26,7 @@
 }
 
 .header__link {
-    padding: 32px 0;
+    // padding: 32px 0;
     display: block;
     position: relative;
     color: var(--color-primary);

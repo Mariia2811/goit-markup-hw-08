@@ -1,24 +1,30 @@
 .footer {
     background-color: var(--secondary-background);
     padding: 60px 0;
-    display: flex;
+    // display: flex;
 
     &__container {
-        display: flex;
+        // display: flex;
         align-items: baseline;
     }
 
     &__adress {
-        margin-right: 70px;
-        width: 231px;
+        text-align: center;
+        // margin-right: 70px;
+        // width: 231px;
     }
 
     &-social {
-        margin-right: 93px;
+        // margin-right: 93px;
     }
 
     & .link {
         line-height: 1.71;
+    }
+
+    &__item{
+        font-size: 14px;
+        font-weight: 400;
     }
 
     &__item:not(:last-child) {
@@ -26,10 +32,15 @@
     }
 
     &-description {
+        text-align: center;
         color: var(--white-accent);
         font-weight: 700;
         font-size: 14px;
         text-transform: uppercase;
         margin-bottom: 20px;
+    }
+
+    &__contact{
+        margin-bottom: 60px;
     }
 }
