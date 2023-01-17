@@ -28,7 +28,7 @@
             <a href="./index.html" class="logo"
               >Web<span class="logo__header">Studio</span></a
             >
-            <button class="header__burger" type="button">
+            <button class="header__burger js-open-menu" type="button">
               <svg width="24" height="16">
                 <use href="./images/icons.svg#icon-navigation"></use>
               </svg>
@@ -230,7 +230,10 @@
               <li class="team__item">
                 <img
                   class="work__image"
-                  srcset="./images/developer.jpg 1x, ./images/developer@2x.jpg 2x"
+                  srcset="
+                    ./images/developer.jpg    1x,
+                    ./images/developer@2x.jpg 2x
+                  "
                   src="./images/developer.jpg"
                   alt="Усміхнена дівчина в окулярах"
                   width="450"
@@ -274,7 +277,10 @@
               <li class="team__item">
                 <img
                   class="work__image"
-                  srcset="./images/marketing.jpg 1x, ./images/marketing@2x.jpg 2x"
+                  srcset="
+                    ./images/marketing.jpg    1x,
+                    ./images/marketing@2x.jpg 2x
+                  "
                   src="./images/marketing.jpg"
                   alt="Усміхнений хлопець"
                   width="450"
@@ -318,7 +324,10 @@
               <li class="team__item">
                 <img
                   class="work__image"
-                  srcset="./images/uidesigner.jpg 1x, ./images/uidesigner@2x.jpg 2x"
+                  srcset="
+                    ./images/uidesigner.jpg    1x,
+                    ./images/uidesigner@2x.jpg 2x
+                  "
                   src="./images/uidesigner.jpg"
                   alt="Усміхнений хлопець з бородою в окулярах"
                   width="450"
@@ -506,28 +515,54 @@
       </div>
     </footer>
 
-    <div class="mobile-menu">
-      <div class="">
-        <button class="mobile-menu__close" type="button">
+    <div class="mobile-menu js-menu-container">
+      <div class="mobile-menu__container">
+        <button class="mobile-menu__close js-close-menu" type="button">
           <svg width="18.67" height="18.67">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <ul class="">
-          <li>
-            <a href="./index.html" class="">Студія</a>
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item">
+            <a href="./index.html" class="mobile-nav__link">Студія</a>
           </li>
-          <li>
-            <a href="./portfolio.html" class="">Портфоліо</a>
+          <li class="mobile-nav__item">
+            <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
           </li>
-          <li><a href="#" class="">Контакти</a></li>
+          <li class="mobile-nav__item">
+            <a href="#" class="mobile-nav__link">Контакти</a>
+          </li>
         </ul>
-        <ul class="">
-          <li>
-            <a href="mailto:info@devstudio.com" class=""> info@devstudio.com</a>
+        <ul class="mobile-contact">
+          <li class="mobile-contact__item">
+            <a href="tel:+380961111111" class="mobile-contact__tel"
+              >+38 096 111 11 11</a
+            >
           </li>
-          <li>
-            <a href="tel:+380961111111" class=""> +38 096 111 11 11</a>
+          <li class="mobile-contact__item">
+            <a href="mailto:info@devstudio.com" class="mobile-contact__mail">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social">
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Instagram</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link class=" mobile-social__link
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link class=" mobile-social__link
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link class=" mobile-social__link
+              >LinkedIn</a
+            >
           </li>
         </ul>
       </div>
@@ -535,7 +570,7 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="button-close" type="button" data-modal-close>
+        <button class="button-close data-modal-close" type="button">
           <svg class="button-close__icon" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -612,5 +647,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

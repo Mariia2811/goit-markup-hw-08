@@ -516,6 +516,9 @@ p {
     display: none;
   }
 }
+.header__burger:hover, .header__burger:focus {
+  fill: var(--color-accent);
+}
 
 .checkbox {
   position: relative;
@@ -799,11 +802,98 @@ p {
   text-align: center;
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-background);
+  display: none;
+  overflow: auto;
+}
+.mobile-menu.is-open {
+  display: block;
+}
+.mobile-menu__close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  border: none;
+  background-color: inherit;
+}
+.mobile-menu__close:hover, .mobile-menu__close:focus {
+  fill: var(--color-accent);
+}
+.mobile-menu__container {
+  padding: 48px 40px;
+}
+
+.mobile-nav {
+  margin-bottom: 306px;
+}
+.mobile-nav__item:not(:last-child) {
+  padding-bottom: 32px;
+}
+
+.mobile-nav__link {
+  display: block;
+  font-size: 40px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-primary);
+}
+.mobile-nav__link:hover, .mobile-nav__link:focus {
+  color: var(--color-accent);
+}
+
+.mobile-contact {
+  margin-bottom: 64px;
+}
+.mobile-contact__tel {
+  display: block;
+  font-size: 34px;
+  text-decoration: none;
+  color: var(--color-accent);
+  padding-bottom: 32px;
+  font-weight: 500;
+}
+.mobile-contact__mail {
+  font-size: 24px;
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-weight: 500;
+}
+
+.mobile-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.mobile-social__link {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1.22;
+  color: var(--color-accent);
+}
+.mobile-social__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+.mobile-social__item:not(:first-child) {
+  padding-left: 10px;
+}
+
 .modal {
   position: absolute;
   background-color: var(--color-background);
   width: 100%;
-  max-width: 528px;
+  max-width: 450px;
   height: 100%;
   max-height: 581px;
   top: 50%;

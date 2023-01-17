@@ -65,4 +65,8 @@
     @media (min-width: 768px) {
         display: none;
     }
+
+    &:hover, &:focus{
+        fill: var(--color-accent);
+    }
 }
