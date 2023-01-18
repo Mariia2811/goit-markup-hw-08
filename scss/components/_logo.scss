@@ -14,7 +14,10 @@
 
     &__header {
         color: var(--black-logo);
-        // margin-right: 93px;
+        
+        @media (min-width: 768px){
+            margin-right: 93px;
+        }
     }
 
     &__footer {
