@@ -39,5 +39,9 @@
         text-transform: uppercase;
         letter-spacing: 0.06em;
         margin: 0 auto 30px;
+
+        @media (min-width: 768px) {
+            width: 360px;
+        }
     }
 }

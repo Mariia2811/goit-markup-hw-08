@@ -2,11 +2,31 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+
+    @media (min-width: 768px) {
+        gap: 30px;
+    }
+
+    &--gap{
+        gap: 30px;
+    }
 
     &__clients{
         flex-basis: calc((100% - 30px)/2);
+        @media (min-width: 768px) {
+                flex-basis: calc((100% - 60px)/3);
+            }
     }
+
+    &__item{
+        @media (min-width: 768px) {
+            flex-basis: calc((100% - 30px)/2);
+        }
+    }
+
+        &__item:not(:last-child){
+            margin-bottom: 30px;
+        }
 }
 
 .social-list {

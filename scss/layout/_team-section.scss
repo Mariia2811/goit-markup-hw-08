@@ -12,6 +12,11 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    @media (min-width:768px) {
+        flex-basis: calc((100% - 30px)/2);
+        margin-bottom: 0px;
+    }
 }
 
 .team__title {
