@@ -44,3 +44,13 @@
         margin-bottom: 60px;
     }
 }
+
+.container__adress{
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        gap: 165px;
+        margin-bottom: 60px;
+        height: 150px;
+    }
+}

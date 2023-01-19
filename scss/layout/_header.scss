@@ -29,11 +29,17 @@
 }
 
 .header__contact {
-    @media (min-width: 768px){
-        display: flex;
+    display: flex;
+
+    @media (max-width: 1199px){
         flex-direction: column;
         justify-content: center;
     }
+
+    @media (min-width: 1200px){
+        align-items: center;
+    }
+
 }
 
 .header__link {
