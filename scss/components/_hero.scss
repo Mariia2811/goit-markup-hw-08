@@ -2,7 +2,6 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
     background-repeat: no-repeat;
     max-width: 480px;
-    // max-width: 1600px;
     height: 400px;
     margin: 0 auto;
     background-position: center;
@@ -30,6 +29,19 @@
             }
     }
 
+    @media (min-width: 1200px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner1200.jpg);
+        max-width: 1600px;
+        height: 600px;
+        padding: 200px 0;
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner1200@2x.jpg);
+            }
+        }
+
     &__title {
         color: var(--white-accent);
         font-size: 26px;
@@ -43,5 +55,11 @@
         @media (min-width: 768px) {
             width: 360px;
         }
+
+        @media (min-width: 1200px) {
+            width: 696px;
+            font-size: 44px;
+            line-height: 1.36;
+            }
     }
 }
