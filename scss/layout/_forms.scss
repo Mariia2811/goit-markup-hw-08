@@ -19,16 +19,25 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: inherit;
-    margin: 0 auto 20px auto;
 
     @media (min-width: 768px) {
         width: 450px;
         display: block;
     }
 
+    @media (max-width: 1199px) {
+        margin: 0 auto 20px auto;
+    }
+
     &::placeholder {
         font-size: 16px;
         color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media (min-width: 1200px) {
+        width: 355px;
+        display: inline-block;
+        margin-right: 12px;
     }
 }
 
@@ -98,4 +107,8 @@
 
 .form-email{
     text-align: center;
+
+    @media (min-width: 1200px) {
+        text-align: left;
+    }
 }

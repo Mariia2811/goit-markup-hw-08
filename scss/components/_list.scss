@@ -8,7 +8,6 @@
     }
 
     @media (min-width: 1200px) {
-        gap: 30px;
         flex-wrap: nowrap;
     }
 
@@ -30,7 +29,9 @@
     }
 
         &__item:not(:last-child){
-            margin-bottom: 30px;
+            @media (max-width: 767px){
+                margin-bottom: 30px;
+            }
         }
 }
 
@@ -40,6 +41,8 @@
     justify-content: center;
 
     &--footer{
-        margin-bottom: 60px;
+        @media (max-width: 767px){
+            margin-bottom: 60px;
+        }
     }
 }

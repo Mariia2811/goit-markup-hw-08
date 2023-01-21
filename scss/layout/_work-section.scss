@@ -7,7 +7,7 @@
 
     &__description {
         position: absolute;
-        // width: 100%;
+        width: 100%;
         bottom: 0;
         margin-bottom: 0;
         font-size: 14px;
@@ -21,6 +21,14 @@
     }
     &__image{
         margin: 0 auto;
+        height: 460px;
+        @media (min-width: 768px) {
+            height: 374px;
+        }
+        
+        @media (min-width: 1200px) {
+            height: 260px;
+        }
     }
 }
 
