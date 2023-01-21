@@ -28,13 +28,16 @@
 
     &__container{
         padding: 48px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-height: 796px;
+        height: 100%;
     }
 
 }
 
 .mobile-nav{
-    margin-bottom: 306px;
-
     &__item:not(:last-child) {
         padding-bottom: 32px;
     }
